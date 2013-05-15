@@ -1,0 +1,42 @@
+!!! 5
+html(lange="en")
+
+	head
+		include meta
+
+		//Favicon
+		link( rel="shortcut icon", href="/favicon.ico")
+		link( rel="apple-touch-icon", href="/apple-touch-icon.png")
+
+		//Css
+		link( rel="stylesheet", type="text/css", media="screen", href="styles/main.css")
+
+		//RSS TODO
+
+	body.home
+		#App
+			header
+				.logo logo here
+			nav
+				a link 1 2
+				a link 2
+				a link 3
+
+			.content
+				section section content 1
+				section section content 2
+
+			footer
+				p copyright here
+
+		#Scripts
+			script
+				//var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; //Add ID
+				//(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+				//g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+				//s.parentNode.insertBefore(g,s)}(document,'script'));
+
+			script( data-main="scripts/main", src="bower_components/requirejs/require.js")
+
+		#Templates
+			include scripts/templates/templates
